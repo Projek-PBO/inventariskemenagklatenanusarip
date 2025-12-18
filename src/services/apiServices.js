@@ -1,5 +1,5 @@
 // API base URL for Firebase Realtime Database
-const API_BASE_URL = 'https://inventorisklaten-default-rtdb.firebaseio.com';
+const API_BASE_URL = 'https://inventariskemenagklaten-default-rtdb.firebaseio.com/';
 
 // Helper function to transform Firebase object to array
 const firebaseObjectToArray = (firebaseObject) => {
@@ -399,4 +399,5 @@ export const apiService = {
       return { success: false, message: error.message };
     }
   }
+
 };
