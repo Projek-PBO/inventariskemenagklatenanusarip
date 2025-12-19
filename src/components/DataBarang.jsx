@@ -358,7 +358,7 @@ const loadBorrowers = async (barangId) => {
 
     setLoading(true);
     try {
-      const response = await apiService.returnItem(peminjam.id);
+      const response = await apiService.returnItem(peminjam);
       if (response.success) {
         alert(`Barang berhasil dikembalikan oleh ${peminjam.nama_peminjam}!`);
         // Refresh data
@@ -909,5 +909,6 @@ const loadBorrowers = async (barangId) => {
     </div>
   );
 }
+
 
 export default DataBarang;
